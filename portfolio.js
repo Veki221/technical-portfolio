@@ -4,7 +4,7 @@ const caseTemplate = document.querySelector('#case-template');
 for (const work of portfolioCases) {
   const card = caseTemplate.content.cloneNode(true);
 
-  for (const field of ['title', 'type', 'task', 'changes', 'result', 'verification']) {
+  for (const field of ['title', 'type', 'task', 'changes', 'result']) {
     card.querySelector('.case-' + field).textContent = work[field];
   }
 
