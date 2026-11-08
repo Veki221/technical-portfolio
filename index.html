@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru" data-type="service" data-radius="soft" data-buttons="solid" data-motion="on">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="page-type" content="service">
+  <meta name="site-kind" content="other">
+  <meta name="theme-color" content="#dfdedb">
+  <meta name="description" content="Примеры адаптивной вёрстки и обработки данных: задача, решение и проверка результата.">
+  <meta property="og:title" content="Вёрстка и обработка данных">
+  <meta property="og:description" content="Примеры вёрстки, обработки данных и интеграций с проверкой результата.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="adaptive-price-card/screenshots/desktop-after.png">
+  <title>Вёрстка и обработка данных · Портфолио</title>
+  <link rel="icon" href="mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="assets/motion/motion.css">
+  <link rel="stylesheet" href="assets/moments/word-highlight/moment.css">
+  <link rel="stylesheet" href="style.css">
+  <script>if (location.protocol !== "file:") { document.documentElement.classList.add("m-enter"); setTimeout(() => document.documentElement.classList.add("m-enter-done"), 700); }</script>
+  <script defer src="cases.js"></script>
+  <script defer src="portfolio.js"></script>
+  <script type="module" src="assets/motion/motion.js"></script>
+  <script type="module" src="assets/moments/moments.js"></script>
+</head>
+<body>
+  <!-- Taste Skill: service / split / stone-blueprint / Source Serif 4 + Libre Franklin / word-highlight. -->
+  <a class="skip" href="#main">К содержанию</a>
+  <header class="wrap bar nav">
+    <a class="brand" href="#main"><img src="mark.svg" alt="" width="30" height="30"> Техническое портфолио</a>
+    <nav aria-label="Разделы"><a href="#works">Работы</a><a href="#services">Услуги</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero" data-enter aria-labelledby="title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 id="title">Вёрстка и обработка данных</h1>
+          <p>Исправляю отображение сайтов на телефонах и привожу в порядок выгрузки. В портфолио есть примеры работ с проверкой результата.</p>
+          <a class="button" href="#works">Посмотреть работы</a>
+        </div>
+        <div class="hero-visual" data-visual>
+          <img class="hero-wide" src="adaptive-price-card/screenshots/desktop-after.png" alt="Страница печатной мастерской «Тираж» на широком экране" width="1280" height="800">
+          <img class="hero-phone" src="adaptive-price-card/screenshots/mobile-after.png" alt="На телефоне весь прайс «Тиража» помещается в экран" width="390" height="900">
+        </div>
+      </div>
+    </section>
+    <section id="works" class="work-section" aria-labelledby="works-title">
+      <div class="wrap">
+        <h2 id="works-title">Работы</h2>
+        <div id="case-list"></div>
+      </div>
+    </section>
+    <section id="services" class="service-section statement" data-moment="word-highlight" aria-labelledby="services-title">
+      <div class="wrap">
+        <h2 id="services-title">С чем можно обратиться</h2>
+        <p class="statement-line mo-wh__text">У каждой задачи есть <strong>результат</strong>, который можно проверить на странице, в отчёте или на тестовых данных.</p>
+        <dl class="services">
+          <div><dt>Вёрстка и правки сайтов</dt><dd>Адаптация под телефон и исправления HTML, CSS и JavaScript.</dd></div>
+          <div><dt>Данные и автоматизация</dt><dd>Очистка CSV, Excel и JSON, скрипты для файлов и повторяющихся операций.</dd></div>
+        </dl>
+        <a class="button" href="#works">Открыть примеры</a>
+      </div>
+    </section>
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div class="wrap contact-layout">
+        <div>
+          <h2 id="contact-title">Обсудим задачу</h2>
+          <p>Опиши, что нужно сделать. Если есть ссылка на страницу или пример данных, приложи их к сообщению.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button" href="https://t.me/Veki_21">Написать в Telegram</a>
+          <a class="contact-email" href="mailto:petrins888@gmail.com">Написать на почту</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap bar footer closing"><span>Техническое портфолио</span><a href="#main">К началу страницы</a></footer>
+  <template id="case-template">
+    <article class="case">
+      <div class="case-copy">
+        <p class="case-type"></p>
+        <h3 class="case-title"></h3>
+        <dl class="case-details">
+          <div><dt>Задача</dt><dd class="case-task"></dd></div>
+          <div><dt>Что сделано</dt><dd class="case-changes"></dd></div>
+          <div><dt>Результат</dt><dd class="case-result"></dd></div>
+          <div><dt>Как проверено</dt><dd class="case-verification"></dd></div>
+        </dl>
+        <ul class="case-links" aria-label="Материалы работы"></ul>
+      </div>
+      <div class="case-images"></div>
+    </article>
+  </template>
+</body>
+</html>

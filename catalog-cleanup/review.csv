@@ -1,0 +1,7 @@
+﻿record;sku;sku_raw;name_raw;price_raw;issue;prices_found;extra_fields
+4;B-205;B-205;Рюкзак;2 490,00;price_conflict;2490.00 | 2590.00;
+5;B-205;B-205;Рюкзак;2590.00;price_conflict;2490.00 | 2590.00;
+6;C-310;C-310;Термокружка;по запросу;invalid_price;;
+7;D-410;D-410;;690;missing_name;;
+8;;;Набор карандашей;350;missing_sku;;
+9;E-510;E-510;Папка;0;invalid_price;;
